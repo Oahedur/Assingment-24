@@ -1,0 +1,274 @@
+/* ..........header-css....... */
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #e7e6e6;
+}
+.header-logo{
+  padding: 10px;
+}
+.header-logo img{
+  width: 100px;
+  
+}
+/* .....buttonn..css */
+.button3{
+    color: #fff;
+    font-size: 20px;
+    background:#ffffff;
+    padding: 9px 20px;
+    color: blue;
+    margin-top: 13px;
+    display: inline-block;
+    border-radius: 40px;
+    /* position: relative; */
+    z-index: 1;
+}
+.button3::before{
+content:" ";
+width:0;
+height:100%;
+position: absolute;
+top:0;
+left: 0;
+background:blue;
+border-radius: 40px;
+transition: .6s;
+z-index: -1;
+
+} 
+.button3:hover::before{
+width: 100%;
+}
+.button3:hover{
+    color: #fff;
+}
+/* ..........menu csss........ */
+.header-section ul li:nth-child(1) a{
+    color: blue;
+}
+.header-section ul li a span::before{
+    margin-top: 54px;
+    display: block;
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background: blue;
+    width: 50px;
+    right: -4%;
+}
+.header-section ul li a::after{
+    margin-top: 30px;
+    display: block;
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background:blue;
+    width: 0%;
+    visibility: hidden;
+    transition: .8s;  
+}
+.header-section ul li a:hover::after{
+    width: 100%;
+    visibility: visible;
+}
+.header-section ul li{
+    display: inline-block;
+    transition: .8s;
+    padding: 10px 10px;
+}
+.header-section ul li a{
+    display: inline-block;
+    color: black;
+    transition: .8s;
+    position: relative;
+}
+.header-section ul li a:hover{
+    color: blue;}
+
+/* .......baner-css...... */
+.banner-section{
+   background: #edf6ff;
+}
+.img-part img{
+    border-radius: 50%;
+    width: 900px;
+}
+.bton{
+    border-radius: 30px;
+}
+.bton:hover{
+    background: #edf6ff;
+    color: blue;
+}
+.bt::after{
+    margin-top: 10px;
+    display: block;
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background: blue;
+    width: 50px;
+    right: 92%;
+
+}
+/* .......card..css........... */
+.imgg{
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -4%;
+    bottom: 9%;
+}
+
+.about-section{
+  padding-bottom: 100px;
+  position: relative;
+  
+}
+.card{
+    background: #f9fcff;
+    padding: 20px;
+    box-shadow: 0px 0px 1px blue;
+    border-radius: 5px;
+    transform: scale(1);
+}
+.card-icon span i{
+    color: #ffffff;
+    background: blue;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 60px 60px 60px 0px;
+}
+.card:hover{
+    background: blue;
+    color: #f9fcff;
+    transition: 1s;
+    transform:scale(1.1);
+}
+    .card:hover i{
+        background: #e7e6e6;
+        color: blue;
+        transition: 1s;
+    }
+.card-icon span i::after{
+    margin-top: 22px;
+    display: block;
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background: blue;
+    width: 9%;
+    right: 85%}
+.card::before{
+    margin-top: 121px;
+    display: block;
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background:#fff;
+    width: 3%;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+.card:hover::before{
+    width: 15%;
+    visibility: visible;
+}
+.video-section{
+    background: url(./img/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    padding: 80px 0px 216px;
+}
+
+
+
+.video-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.664);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* .........baton.....css......... */
+.main-div{
+   
+}
+        
+.video-box{
+
+ 
+    
+
+}
+.video-box .play-btn{
+    background:#fff;
+    color:blue;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px ;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+
+}
+.video-box .play-btn i{
+    line-height: 100px;
+    margin-left: 10px;
+    
+
+}
+
+.video-box .play-btn::before{
+    
+
+    animation-delay: 0.6s;
+}
+.video-box .play-btn::after{
+    content: '';
+    position: absolute;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+ @keyframes animate{
+    0%
+{transfrom:scale(.5);
+
+}
+50%
+{opacity: 2;
+}
+100%
+{transfrom:scale(1.5);
+
+} 
+
+
+}
+    
+
+
+
+
